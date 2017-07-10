@@ -25,6 +25,10 @@ class GuestsController < ApplicationController
     redirect_to guest_path(@guest)
   end
 
+  def appearance
+    redirect_to appearance_path 
+  end
+
   def show
     @guest = Guest.find(params[:id])
   end
