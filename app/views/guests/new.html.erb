@@ -1,0 +1,10 @@
+<%=form_tag guests_path do %>
+Episode <%= select_tag "appearance[episode_id]", options_from_collection_for_select(Episode.all, "id", "number")%> <br>
+Guest <%= select_tag "appearance[guest_id]", options_from_collection_for_select(Guest.all, "id", "name")%> <br>
+Rating <%= text_field_tag 'rating[rating]'%>
+<%= submit_tag "Submit" %>
+<% end %>
+
+<!--
+Guest <%= text_field_tag 'appearance[guest_id]' %>
+Episode <%= text_field_tag 'appearance[episode_id]' %> -->

@@ -25,4 +25,11 @@ date = Date.parse('2015-09-08')
   date = date.next
 end
 
+# (1..100).each do |num|
+#   appearance = Appearance.new
+#   Guest.find(rand(1..100)).episodes << appearance
+#   Episode.find(rand(1..40)).guests << appearance
+#   appearance.save
+# end
+
 User.create(username: 'stephencolbert', password: 'bears')
